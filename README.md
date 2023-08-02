@@ -1,0 +1,1 @@
+Adatbázisos anyja
