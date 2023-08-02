@@ -50,18 +50,25 @@ userpass = None
 folytatas = True
 uj1 = None
 uj2 = None
+command = None
 
 while folytatas:
     userpass=int(input("Mi a PIN? "))
     if userpass == passw:
-        uj1 = input("Mihez adsz meg új jelszót? ")
-        uj2 = input("Mi a jelszó? ")
-        cursor.execute("INSERT INTO pass (forras, jelszo) VALUES (%s, %s)", (uj1,uj2))
-        database.commit()
+        command=input("Mit szeretnél tenni? (megtekintés / hozzáadás) ")
+        if command== '':
+            folytatás=False
+        if command=="hozzáadás":
+            uj1 = input("Mihez adsz meg új jelszót? ")
+            uj2 = input("Mi a jelszó? ")
+            cursor.execute("INSERT INTO pass (forras, jelszo) VALUES (%s, %s)", (uj1,uj2))
+            database.commit()
         if uj1 or uj2 == '':
             folytatas=False
         else:
             print("Feltöltve")
+        if command=="megtekintés":
+            cursor.execute("..........!!!!!!")
     else:
         folytatas=False
 
