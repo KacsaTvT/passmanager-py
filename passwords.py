@@ -10,7 +10,7 @@ database = mysql.connector.connect(
 )
 cursor = database.cursor()
 
-#cursor.execute("CREATE TABLE pass (forras VARCHAR(255), jelszo VARCHAR(255))")
+cursor.execute("CREATE TABLE IF NOT EXISTS pass (forras VARCHAR(255), jelszo VARCHAR(255))")
 
 userpass = None
 folytatas = True
