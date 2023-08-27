@@ -1,12 +1,12 @@
 import mysql.connector
 
-passw = 3644
+passw = 0000
 
 database = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
     password = '',
-    database = 'jelszavak'
+    database = 'sajatod' #változtasd meg
 )
 cursor = database.cursor()
 
@@ -40,4 +40,4 @@ while folytatas:
     if command== '' or command=='kilépés':
         folytatas=False
 
-print("A program vége")
+#print("A program vége")
