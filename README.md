@@ -1,1 +1,1 @@
-Adatbázisos anyja
+Adatbázisos python egyszerű felület, adatbázissal összekötve.
