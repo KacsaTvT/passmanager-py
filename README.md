@@ -1,1 +1,1 @@
-Adatbázisos python egyszerű felület, adatbázissal összekötve.
+Adatbázissal összekötött egyszerű python manager felület.
